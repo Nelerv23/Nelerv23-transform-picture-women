@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <style>
+        
+        universal selector
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position: relative;
+            width:400px;
+            height:400px;
+            top:0;
+            left:0;
+            
+
+        }
+
+       
+
+         .women{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: orange;
+        
+            text-align: center;        
+
+
+            }
+            .women img{
+                width:100%;
+                height: 100%;
+            }
+
+            .container:hover .women{
+
+            width:100px;
+            height:100px;
+            left:350px;
+            top:150px;
+
+
+            }
+
+            .container:hover .women img{
+                border-radius: 50px;
+            }
+
+        .para{
+            position: absolute;
+            
+            text-align: center;
+            background-image: linear-gradient(to bottom right, orange, red);
+            width: 100%;
+            height: 100%;
+           z-index:-2;
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="women">
+            <img src="24.jpg">
+        </div>
+
+        <div class="para">
+            <h2> Stylish Women</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+            
+            
+            
+        
+    </div>
+</body>
+</html>
